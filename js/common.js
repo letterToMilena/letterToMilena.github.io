@@ -20,7 +20,7 @@ $(document).ready(function(){
        {
              case 'f_answer_input':
                 var regExpLength = /^[0-9.]+$/; 
-                if(val == '02112018' && val != '' && regExpLength.test(val))
+                if(val == '021120184' && val != '' && regExpLength.test(val))
                 {
                     answerValue=val;
                     
