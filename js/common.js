@@ -51,8 +51,10 @@ $(document).ready(function(){
     });
 let validLetter = 0;
 validationLetter = () => {
+  if (document.getElementById('answer').getElementsByClassName('not_error').length<1) {
 validLetter = validLetter + 1;
 visiblePost();
+};
 };
 visiblePost = () => {
        if (document.getElementById('answer').getElementsByClassName('not_error').length<1){
