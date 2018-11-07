@@ -32,10 +32,12 @@
 		</center>
 	</div>
 	<div class="text">
-		Этот сайт специально для тебя и содержит тайное послание, которое видно будет только тебе.
-		Наверное, ты уже поняла кто я, но пусть пока это будет интригой.
+		Этот сайт необычный - он содержит тайное послание, которое видно будет только тебе.
+		Наверное, ты уже поняла кто я, но пусть пока это будет интригой, хоть и небольшой.
 
-		Тебе придется ответить на один вопрос, чтобы сайт понял, что это именно ты и сделал моё послание видимым. <br>
+		Тебе придется ответить на один вопрос, чтобы я понял что это именно ты и сделал послание видимым. 
+		<br><i style="color: red;">Ответ состоит только из девяти цифр, написанных слитно.</i>
+			<br>
 		Внизу есть кнопка! Действуй)
 
 	</div>
@@ -48,11 +50,11 @@
 	<div id="answer">
 		<h3>Ты в шаге от разгадки!</h3>
 		<form class="answerForm" id="f_answer" name="answer" action="#" method="post">
-		<label for="f_answer">Введи дату когда мы встретились (8 цифр) в формате ДДММГГГГ</label>
+		<label for="f_answer" class="textform">Введи дату когда мы встретились в формате ДДММГГГГ и добавь количество букв из названия кофейни где мы проводили время. (Подсказка: ответом будет 9 цифр без пробелов)</label>
 		<input type="text" id="f_answer_input" class="inputStyle" name="f_text_answer">
 		<div class="error-box"></div>
 		<center>
-			<input type="submit" class="flat2" id="f_answer_input" name="f_answer_input" onclick="visiblePost()" value="Показать письмо!"/>
+			<input type="submit" class="flat2" id="f_answer_input" name="f_answer_input" onclick="validationLetter()" value="Показать письмо!"/>
 		</center>
 		</form>
 	</div>
