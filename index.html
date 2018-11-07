@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<head>
+	<title>Милене</title>
+	<meta charset="utf-8" />
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/d3.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	
+	<!--подкючаем fancybox-->
+<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+</head>
+<body>
+	<div class="title">
+		<center>
+			Привет, Милена! <br>
+			
+
+		</center>
+	</div>
+	<div class="text">
+		Этот сайт специально для тебя и содержит тайное послание, которое видно будет только тебе.
+		Наверное, ты уже поняла кто я, но пусть пока это будет интригой.
+
+		Тебе придется ответить на один вопрос, чтобы сайт понял, что это именно ты и сделал моё послание видимым. <br>
+		Внизу есть кнопка! Действуй)
+
+	</div>
+	<center>
+	<a href="#answer" rel="nofollow" class="modalbox mail-btn">
+		 ЖМИ
+		</a>
+	</center>
+	<!-- всплывающее окно -->
+	<div id="answer">
+		<h3>Ты в шаге от разгадки!</h3>
+		<form class="answerForm" id="f_answer" name="answer" action="#" method="post">
+		<label for="f_answer">Введи дату когда мы встретились (8 цифр) в формате ДДММГГГГ</label>
+		<input type="text" id="f_answer_input" class="inputStyle" name="f_text_answer">
+		<div class="error-box"></div>
+		<center>
+			<input type="submit" class="flat2" id="f_answer_input" name="f_answer_input" onclick="visiblePost()" value="Показать письмо!"/>
+		</center>
+		</form>
+	</div>
+	<div id="post">
+		<!-- здесь будет письмо -->
+	</div>
+	
+
+</body>
+</html>
